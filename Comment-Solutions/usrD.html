@@ -19,14 +19,16 @@
 							var imgUrl= json.linked.medias[0].url;
 							var wth="200";
 							var ht="100";
-							var created = new Date(json.linked.users[0].joinedAt );
-							var lstlogin = new Date(json.linked.users[0].lastLogin );
+						
 							
 							document.getElementById("div3").innerHTML =
 							"<img src="+imgUrl+" alt="+name+"width="+wth+" height="+ht+"> "
 							
 							document.getElementById("div2").innerHTML =
 							"<strong>"+ name + "</strong> " ;
+							
+							var created = new Date(json.linked.users[0].joinedAt );
+							var lstlogin = new Date(json.linked.users[0].lastLogin );
 							
 							document.getElementById("slug").innerHTML =
 							"<strong> Slug:  </strong> "+json.linked.users[0].slug ;
@@ -39,6 +41,9 @@
 							
 							document.getElementById("activty").innerHTML =
 							"<strong> Last activity on: </strong>"+lstlogin.toDateString();
+							
+							document.getElementById("recent").innerHTML =
+							"<strong>Recent Comments: </strong>"+json.comments[0].text;
 							
 						});
 					 							
@@ -61,6 +66,7 @@
 		<div id="bio" class="td1" ></div>
 		<div id="created" class="td1" ></div>
 		<div id="activty" class="td1" ></div>
+		<div id="recent" class="td1" ></div>
 	</div>
 
 </div>
