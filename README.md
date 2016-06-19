@@ -11,6 +11,8 @@
 #Problem-2 (Comments from API):
   The user wants a responsive web interface to see a particular comment from the mySidewalk engagement comments API. Load the comment with ID 100 (https://mysidewalk.com/api/engagement/v1/comments/100.json) from the API, redirect the window’s location to a path that represents a human friendly portion of the comment, and display the comment in a device response and visually pleasing manner.
   
+      Click Over Usernames, Hover over date!
+  
   #Requirements: 
     1. Internet connection for CDN's
   
