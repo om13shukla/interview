@@ -46,7 +46,7 @@ words.sort()
 
 print('\n')
 l1=(len(lines)+(a-len(lines)-1))
-print('l1= ',l1)
+#print('l1= ',l1)
 lt1=[]
 for i in range(l1):
     lt1.append(int(words[i][0]))
@@ -56,7 +56,7 @@ lt1.sort()
             #Part 2 of 2: Numerical sorting: unique List of nums from input
 lt1=list(set(lt1))
 lt1.sort()
-print('lt1= ',lt1)
+#print('lt1= ',lt1)
 
             #debug Purpose
 #for i in range(len(words)):
