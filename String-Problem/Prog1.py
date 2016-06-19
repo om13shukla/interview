@@ -72,7 +72,7 @@ for i in range(len(lt1)):
     for j in range(l1):
         if(str(lt1[i]) in words[j]):
             lt2.append(' '.join(words[j]))
-            print(' ',lt1[i],words[j][0])
+          
 
 
 #print('\n')
@@ -82,7 +82,7 @@ l2=(a-len(lines))
 
 for i in range(l2,0):
     lt2.append(' '.join(words[i]))
-    print(' ',words[i])
+    
 
 
 
