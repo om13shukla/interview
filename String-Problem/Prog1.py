@@ -26,14 +26,13 @@ lt3=[]
 for i in range(len(lines)):
     lt3.append(re.findall(r"\A\d+", lines[i]))
 
-print('lt3= ',lt3)
-print('\n')
+
 
             #optimize the list
 for i in range(len(lt3)):
     if not lt3[i]:
         a=a-1
-print('len of alphanums = ',a,'\n')
+
 
        
             #Seperating nums and words into a list
@@ -43,7 +42,7 @@ for i in range(len(lines)):
             # Part 1 of 2: Alpabetically sorting    
 words.sort()
 
-print('words= ',len(words),' =',words)
+
 
 print('\n')
 l1=(len(lines)+(a-len(lines)-1))
@@ -60,9 +59,9 @@ lt1.sort()
 print('lt1= ',lt1)
 
             #debug Purpose
-for i in range(len(words)):
-    print(words[i][0],end=', ')
-print('\n')
+#for i in range(len(words)):
+#    print(words[i][0],end=', ')
+#print('\n')
 
 lt2=[]
 
@@ -76,9 +75,9 @@ for i in range(len(lt1)):
             print(' ',lt1[i],words[j][0])
 
 
-print('\n')
+#print('\n')
 l2=(a-len(lines))
-print('l2',l2,'\n')
+#print('l2',l2,'\n')
 
 
 for i in range(l2,0):
